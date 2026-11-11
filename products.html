@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | EnzoBiryani</title>
+  <meta name="description" content="Explore EnzoBiryani's menu: chicken, mutton, egg and seafood dum biryanis plus student combos and family packs.">
+  <meta name="theme-color" content="#5B1A18">
+
+  <!-- Google tag (GA4) — replace G-XXXXXXXXXX with your real Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="EnzoBiryani home">Enzo<span>Biryani</span> 🍛</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active" aria-current="page">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-banner">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>Pick your protein, pick your spice level. Every order comes with raita and salan.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="chicken" aria-pressed="false">Chicken</button>
+          <button class="filter-btn" data-filter="mutton" aria-pressed="false">Mutton</button>
+          <button class="filter-btn" data-filter="egg" aria-pressed="false">Egg</button>
+          <button class="filter-btn" data-filter="seafood" aria-pressed="false">Seafood</button>
+          <button class="filter-btn" data-filter="combo" aria-pressed="false">Combos</button>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card" data-id="EB-101" data-name="Hyderabadi Chicken Dum Biryani" data-category="chicken" data-price="249" data-desc="Classic kachchi-style dum biryani with juicy chicken, saffron rice, mint and fried onions. Served with raita and mirchi ka salan.">
+            <div class="card-img"><span class="badge">Bestseller</span><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=70" alt="Hyderabadi chicken dum biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Hyderabadi Chicken Dum</h3>
+              <p>Saffron rice and juicy chicken, sealed and slow-cooked. Medium-spicy.</p>
+              <div class="card-foot"><span class="price">₹249</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-102" data-name="Mutton Dum Biryani" data-category="mutton" data-price="379" data-desc="Tender bone-in mutton marinated overnight in yoghurt and whole spices, layered with long-grain basmati and cooked on dum for 90 minutes.">
+            <div class="card-img"><span class="badge">Chef's Special</span><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=70" alt="Mutton dum biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Mutton Dum Biryani</h3>
+              <p>Bone-in mutton marinated overnight, slow-cooked for 90 minutes.</p>
+              <div class="card-foot"><span class="price">₹379</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-103" data-name="Egg Biryani" data-category="egg" data-price="179" data-desc="Masala-coated boiled eggs layered with fragrant rice, caramelised onions and fresh coriander. Light, flavourful and budget-friendly.">
+            <div class="card-img"><span class="badge">Budget Pick</span><img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?auto=format&fit=crop&w=800&q=70" alt="Egg biryani with coriander" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Egg Biryani</h3>
+              <p>Masala eggs on fragrant rice with caramelised onions.</p>
+              <div class="card-foot"><span class="price">₹179</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-104" data-name="Prawn Biryani" data-category="seafood" data-price="349" data-desc="Juicy tiger prawns tossed in coastal masala, layered with coconut-infused basmati and curry leaf tempering.">
+            <div class="card-img"><span class="badge">Coastal</span><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=800&q=70" alt="Prawn biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Coastal Prawn Biryani</h3>
+              <p>Tiger prawns in coastal masala with coconut-scented rice.</p>
+              <div class="card-foot"><span class="price">₹349</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-105" data-name="Lucknowi Chicken Biryani" data-category="chicken" data-price="269" data-desc="Mild, aromatic Awadhi-style biryani with kewra, rose water and whole spices. Perfect if you prefer fragrance over fire.">
+            <div class="card-img"><span class="badge">Mild</span><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=70" alt="Lucknowi chicken biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Lucknowi Chicken</h3>
+              <p>Mild Awadhi-style biryani scented with kewra and rose water.</p>
+              <div class="card-foot"><span class="price">₹269</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-106" data-name="Fish Fry Biryani" data-category="seafood" data-price="329" data-desc="Crisp masala-fried seer fish fillets served over spiced basmati with lemon and fried onions.">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=70" alt="Fish fry biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Fish Fry Biryani</h3>
+              <p>Crisp masala-fried fish over spiced basmati with lemon.</p>
+              <div class="card-foot"><span class="price">₹329</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-107" data-name="Family Feast Handi (serves 4)" data-category="combo" data-price="899" data-desc="A full handi of chicken dum biryani (serves 4) with 2 raitas, mirchi ka salan, 4 boiled eggs and a gulab jamun box.">
+            <div class="card-img"><span class="badge">Serves 4</span><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=70" alt="Family feast handi of biryani" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Family Feast Handi</h3>
+              <p>Full handi (serves 4) with raita, salan, eggs and gulab jamun.</p>
+              <div class="card-foot"><span class="price">₹899</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+
+          <article class="card" data-id="EB-108" data-name="Student Combo" data-category="combo" data-price="199" data-desc="A student-budget meal: half-portion chicken biryani, raita, a boiled egg and a chilled soft drink. Show your college ID for the same price all week.">
+            <div class="card-img"><span class="badge">Value Pick</span><img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?auto=format&fit=crop&w=800&q=70" alt="Student combo meal" loading="lazy"></div>
+            <div class="card-body"><h3><span class="nv-dot" aria-label="Non-vegetarian"></span>Student Combo</h3>
+              <p>Half biryani, raita, egg and a cold drink under ₹200.</p>
+              <div class="card-foot"><span class="price">₹199</span><div class="card-actions">
+                <button class="btn btn-primary btn-sm" data-action="view_details">View Details</button>
+                <button class="btn btn-dark btn-sm" data-action="add_to_order">Order</button></div></div></div>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:2rem;font-size:.85rem;color:#6b5a50">Prices are sample prices for this project. Photos from Unsplash are for illustration only.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ordering for a group?</h2>
+        <p>Tell us your headcount and date — we'll share a party-pack quote.</p>
+        <a href="contact.html" class="btn btn-primary">Send an Enquiry</a>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="product-dialog" aria-label="Product details">
+    <div class="dialog-body">
+      <button class="dialog-close" aria-label="Close">&times;</button>
+      <h3></h3><span class="price"></span><p class="d-desc"></p>
+      <p style="margin-top:1.2rem"><a href="contact.html" class="btn btn-primary btn-sm">Enquire to Order</a></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>EnzoBiryani 🍛</h4><p style="font-size:.9rem">Slow-cooked dum biryani, made fresh every day.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>📍 12 Spice Lane, Indiranagar, Bengaluru</li><li>📞 +91 98765 43210</li><li>✉️ hello@enzobiryani.example</li><li>🕚 11 AM – 11 PM, daily</li></ul></div>
+      <div><h4>Follow Us</h4><ul><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+    </div>
+    <p class="copyright">© <span class="year">2026</span> EnzoBiryani. A student project for Marketing Analytics — sample business, not a real restaurant.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | EnzoBiryani</title>
+  <meta name="description" content="Contact EnzoBiryani for orders, party enquiries and feedback, or subscribe to our newsletter.">
+  <meta name="theme-color" content="#5B1A18">
+
+  <!-- Google tag (GA4) — replace G-XXXXXXXXXX with your real Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="EnzoBiryani home">Enzo<span>Biryani</span> 🍛</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-banner">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Bulk orders, feedback or just want to say hi? Send us a note.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container contact-wrap">
+        <div class="form-card">
+          <h2 style="margin-bottom:1.2rem">Send an Enquiry</h2>
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+              <span class="error" id="name-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <span class="error" id="email-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+              <span class="error" id="subject-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+              <span class="error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+          <p style="font-size:.8rem;color:#6b5a50;margin-top:1rem">Note: this is a demonstration form. Messages are not delivered unless a form service is connected.</p>
+        </div>
+
+        <aside>
+          <div class="info-card">
+            <h3 style="margin-bottom:.6rem">Visit or call</h3>
+            <ul>
+              <li>📍 12 Spice Lane, Indiranagar, Bengaluru 560038</li>
+              <li>📞 +91 98765 43210</li>
+              <li>✉️ hello@enzobiryani.example</li>
+              <li>🕚 Open daily, 11 AM – 11 PM</li>
+            </ul>
+            <div class="socials">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+
+          <div class="info-card" style="margin-top:1.5rem">
+            <h3 style="margin-bottom:.4rem">Newsletter</h3>
+            <p style="font-size:.9rem;margin-bottom:1rem">Get weekend offers and new-dish alerts. No spam.</p>
+            <form id="newsletter-form" class="newsletter" novalidate>
+              <label for="newsletter_email" class="sr-only" style="position:absolute;left:-9999px">Email for newsletter</label>
+              <input type="email" id="newsletter_email" name="newsletter_email" placeholder="you@example.com" autocomplete="email" aria-describedby="newsletter_email-error">
+              <button type="submit" class="btn btn-dark">Subscribe</button>
+            </form>
+            <span class="error" id="newsletter_email-error" role="alert"></span>
+            <div id="newsletter-status" class="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>EnzoBiryani 🍛</h4><p style="font-size:.9rem">Slow-cooked dum biryani, made fresh every day.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>📍 12 Spice Lane, Indiranagar, Bengaluru</li><li>📞 +91 98765 43210</li><li>✉️ hello@enzobiryani.example</li><li>🕚 11 AM – 11 PM, daily</li></ul></div>
+      <div><h4>Follow Us</h4><ul><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+    </div>
+    <p class="copyright">© <span class="year">2026</span> EnzoBiryani. A student project for Marketing Analytics — sample business, not a real restaurant.</p>
+  </footer>
+</body>
+</html>
